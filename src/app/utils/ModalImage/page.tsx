@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import image1 from '../../../assets/image/detail/home_leak.png'
-// import image1 from '../../../../assets/image/detail/home_leak.png'
 
 
 export default function ModalImage(image: string) {

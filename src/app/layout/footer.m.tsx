@@ -1,8 +1,5 @@
 import Image from 'next/image'
 import logo from '../../assets/image/Mask_Group.png'
-import avatar from '../../assets/image/avatar.png'
-import Global from '../../assets/icon/Line.svg'
-import Bell from '../../assets/icon/bell.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
