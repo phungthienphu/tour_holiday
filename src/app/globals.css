@@ -25,3 +25,111 @@ body {
     text-wrap: balance;
   }
 }
+
+.nav_after {
+  @apply relative after:absolute after:z-10 after:left-0 after:w-0 hover:after:w-full focus:after:w-full after:h-0.5 after:bg-[#23262F] after:bottom-[-30.5px] after:transition-all after:ease-in-out after:duration-300
+}
+
+
+
+button:hover {
+  cursor: pointer;
+}
+
+.zoom {
+  background-size: 200%;
+}
+
+@layer utilities {
+  .flexImportant {
+    display: flex !important;
+  }
+
+  .hiddenImpotant {
+    display: none !important;
+  }
+}
+
+.slick-arrow::before {
+  position: absolute !important;
+
+  color: #0a0a0a !important;
+}
+
+.slick-arrow {
+  position: absolute !important;
+  bottom: 0 !important;
+}
+
+.slick-list {
+  z-index: 1;
+  /* display: flex !important; */
+  /* flex-direction: row !important; */
+}
+
+.impor .slick-slide {
+  width: 256px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .content_somewhere .slick-track {
+    /* display: flex !important; */
+    gap: 30px !important;
+    /* margin: 0 -10px; */
+
+    /* background-color: #0a0a0a !important; */
+  }
+
+
+}
+
+@media screen and (max-width: 880px) {
+  .property_content .slick-slide {
+    width: 256px !important;
+    /* float: left !important; */
+    /* height: 329px !important; */
+  }
+}
+
+.impor .slick-track .adven .slick-track {
+  display: flex !important;
+  gap: 32px !important;
+  flex-wrap: nowrap !important;
+}
+
+.content_somewhere .slick-track {
+  display: flex !important;
+  /* gap: 28px !important; */
+  /* justify-content: ; */
+}
+
+.adven .slick-slide {
+  /* width: 352px !important; */
+  outline: none !important;
+}
+
+.adven .slick-track {
+  height: 192px !important;
+}
+
+/* detaillll */
+.album_slider .slick-arrow {
+  display: none !important;
+}
+
+.album_slider .slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.property_content .slick-slide,
+.SamePlace .slick-slide {
+  /* width: 236px !important; */
+  width: max-content !important;
+}
+
+
+.browByCateGory .slick-track {
+  display: flex !important;
+  gap: 32px !important;
+}
