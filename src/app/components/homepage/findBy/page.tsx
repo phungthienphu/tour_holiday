@@ -9,9 +9,14 @@ import avt2 from '../../../../assets/image/avt2.png'
 import star from '../../../../assets/icon/star.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+interface props {
+    classname?: object,
+    style?: object,
+    onClick?: () => void
 
+}
 export default function FindBy() {
-    var settings = {
+    let settings = {
         infinite: false,
         speed: 500,
         slidesToShow: 4,
@@ -109,8 +114,8 @@ function Item() {
     )
 }
 
-function SampleNextArrow(props: any) {
-    const { className, style, onClick } = props;
+function SampleNextArrow(props: props) {
+    const { style, onClick } = props;
     return (
         <div
             className={'z-500 w-10 h-10  rounded-full flexImportant items-center justify-center absolute lg:top-[-50%] lg:translate-y-[50%] lg:left-[1024px] md:top-[-50%] md:translate-y-[50%] md:left-[864px] translate-x-[50%] bottom-[-60px] left-[15px] border-0 hover:border-2 border-[#E6E8EC] transition-all duration-150 ease-in-out'}
@@ -121,8 +126,8 @@ function SampleNextArrow(props: any) {
         </div>
     );
 }
-function SamplePrevArrow(props: any) {
-    const { className, style, onClick } = props;
+function SamplePrevArrow(props: props) {
+    const { style, onClick } = props;
     return (
         <div
             className={'z-500 w-10 h-10  rounded-full flexImportant items-center justify-center absolute lg:top-[-50%] lg:left-[1024px] lg:translate-y-[50%] md:top-[-50%] md:left-[864px] md:translate-y-[50%] translate-x-[-50%] bottom-[-60px] left-[10px]  border-0 hover:border-2 border-[#E6E8EC] transition-all duration-150 ease-in-out'}

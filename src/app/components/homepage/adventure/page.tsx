@@ -7,9 +7,14 @@ import SummerImg1 from '../../../../assets/image/Holiday_Summer_1.png'
 import Image from "next/image";
 import arrowL from '../../../../assets/icon/left_arrow.svg'
 import arrowR from '../../../../assets/icon/right_arrow.svg'
+interface props {
+    classname?: object,
+    style?: object,
+    onClick?: () => void
 
+}
 export default function Adventure() {
-    var settings = {
+    let settings = {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -93,8 +98,8 @@ export default function Adventure() {
     )
 }
 
-function SampleNextArrow(props: any) {
-    const { className, style, onClick } = props;
+function SampleNextArrow(props:props) {
+    const { style, onClick } = props;
     return (
         <div
             className={'z-500 w-10 h-10  rounded-full flexImportant items-center justify-center absolute -bottom-10 left-1/2 translate-x-[50%] border-0 hover:border-2 border-[#E6E8EC] transition-all duration-150 ease-in-out'}
@@ -105,8 +110,8 @@ function SampleNextArrow(props: any) {
         </div>
     );
 }
-function SamplePrevArrow(props: any) {
-    const { className, style, onClick } = props;
+function SamplePrevArrow(props:props) {
+    const { style, onClick } = props;
     return (
         <div
             className={'z-500 w-10 h-10  rounded-full flexImportant items-center justify-center absolute -bottom-10 right-1/2   translate-x-[-50%] border-0 hover:border-2 border-[#E6E8EC] transition-all duration-150 ease-in-out'}

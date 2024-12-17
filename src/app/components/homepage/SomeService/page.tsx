@@ -1,7 +1,5 @@
 
 import Image from 'next/image'
-import icon_coin from '../../../../assets/icon/coin.svg'
-import icon_coinlight from '../../../../assets/icon/coinlight.svg'
 import star from '../../../../assets/icon/star.svg'
 import resort from '../../../../assets/image/resort.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -13,7 +11,7 @@ export default function SomeService() {
             <div className='flex lg:w-[1280px] md:w-[944px] w-[375px] mx-auto flex-col gap-16 lg:p-20 md:p-10 px-8 py-16 bg-[#F4F5F6] lg:rounded-3xl md:rounded-3xl rounded-none mb-16'>
             <div className="title_gosomewhere flex flex-col gap-3 lg:w-[1120px] md:w-[864px] w-[311px]">
                 <h1 className='font-bold lg:text-5xl md:text-5xl md:leading-[56px] text-[40px] leading-[48px] tracking-[-2%] lg:leading-[56px] text-[#23262F]'>Go somewhere</h1>
-                <p className='font-normal lg:text-2xl md:text-2xl text-base tracking-[-1%] text-[#777E90]'>Let's go on an adventure</p>
+                <p className='font-normal lg:text-2xl md:text-2xl text-base tracking-[-1%] text-[#777E90]'>Let&apos;s go on an adventure</p>
             </div>
             <div className="content_service flex flex-col gap-12">
                 <div className="nav_service flex flex-row justify-between">

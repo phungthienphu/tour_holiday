@@ -53,7 +53,7 @@ export default function Feedback() {
 
                 <div className="text-center text-sm leading-6 text-[#777E90]">
                     <p>
-                        Described by Queenstown House {'&'} Garden magazine as having 'one of the best views we've ever seen' you will love relaxing in this newly built
+                        Described by Queenstown House {'&'} Garden magazine as having &apos;one of the best views we&apos;ve ever seen&apos; you will love relaxing in this newly built
                     </p>
                 </div>
                 <div className="flex flex-row gap-2 mx-auto">

@@ -6,8 +6,15 @@ import arrowR from '../../../../assets/icon/right_arrow.svg'
 import home from '../../../../assets/icon/home.svg'
 import house from '../../../../assets/image/house.png'
 
+interface props {
+    classname?: object,
+    style?: object,
+    onClick?: () => void
+
+}
+
 export default function SamePlace() {
-    var settings = {
+    let settings = {
         infinite: false,
         speed: 500,
         slidesToShow: 4,
@@ -42,7 +49,7 @@ export default function SamePlace() {
         <div className='flex flex-col gap-[80px] pt-[80px] lg:pb-14 md:pb-[64px] pb-[104px]  mx-auto'>
             <div className="title_property flex flex-col gap-3 justify-center lg:w-[1120px] md:w-[864px] w-[311px] mx-auto">
                 <h1 className='text-5xl font-bold tracking-[-2%]'>Browse by property type</h1>
-                <p className="text-2xl font-normal text-[#777E90] tracking-[-1%]">Let's go on an adventure</p>
+                <p className="text-2xl font-normal text-[#777E90] tracking-[-1%]">Let&apos;s go on an adventure</p>
             </div>
             {/*  lg:w-[1120px]  md:w-[1024px] w-[375px] */}
             <div className='SamePlace'>
@@ -86,8 +93,8 @@ function Item() {
     )
 }
 
-function SampleNextArrow(props: any) {
-    const { className, style, onClick } = props;
+function SampleNextArrow(props: props) {
+    const { style, onClick } = props;
     return (
         <div
             className={'z-500 w-10 h-10  rounded-full flexImportant items-center justify-center absolute lg:top-[-50%] lg:translate-y-[50%] lg:left-[1024px] md:top-[-50%] md:translate-y-[50%] md:left-[864px] translate-x-[50%] bottom-[-70px] left-[15px] border-0 hover:border-2 border-[#E6E8EC] transition-all duration-150 ease-in-out'}
@@ -98,8 +105,8 @@ function SampleNextArrow(props: any) {
         </div>
     );
 }
-function SamplePrevArrow(props: any) {
-    const { className, style, onClick } = props;
+function SamplePrevArrow(props: props) {
+    const { style, onClick } = props;
     return (
         <div
             className={'z-500 w-10 h-10  rounded-full flexImportant items-center justify-center absolute lg:top-[-50%] lg:left-[1024px] lg:translate-y-[50%] md:top-[-50%] md:left-[864px] md:translate-y-[50%] translate-x-[-50%] bottom-[-70px] left-[10px]  border-0 hover:border-2 border-[#E6E8EC] transition-all duration-150 ease-in-out'}

@@ -7,8 +7,14 @@ import horse from "../../../../assets/image/slider_homepage/horse_ot.jpg"
 import arrowL from '../../../../assets/icon/left_arrow.svg'
 import arrowR from '../../../../assets/icon/right_arrow.svg'
 import star from '../../../../assets/icon/star.svg'
+interface props {
+    classname?: object,
+    style?: object,
+    onClick?: () => void
+
+}
 export default function Recommend() {
-    var settings = {
+    let settings = {
         infinite: false,
         speed: 500,
         slidesToShow: 1,
@@ -49,7 +55,7 @@ export default function Recommend() {
                             </div>
                             <div className="item flex gap-6 flex-col">
                                 <span className="text-sm font-medium text-[#FCFCFD] flex gap-[10px] items-center justify-center leading-[20px] px-3 py-0.5 rounded-[100px] bg-[#58C27D] w-max">03</span>
-                                <h2 className="font-semibold text-2xl text-[#23262F] leading-8">See what’s really included</h2>
+                                <h2 className="font-semibold text-2xl text-[#23262F] leading-8">See what&apos;s really included</h2>
                                 <p className="font-normal text-sm text-[#777E90] leading-6">Stacks is a production-ready library of stackable content blocks built in React Native</p>
                             </div>
                         </>
@@ -64,7 +70,7 @@ export default function Recommend() {
                             >
                                 {
                                     listside.map((item, index) => (
-                                        <Image className="block rounded-[32px] w-full h-[700px] object-cover z-40" src={item.src} alt='slide' />
+                                        <Image key={index} className="block rounded-[32px] w-full h-[700px] object-cover z-40" src={item.src} alt='slide' />
                                     ))
                                 }
                             </Slider>
@@ -110,8 +116,8 @@ export default function Recommend() {
     )
 }
 
-function SampleNextArrow(props: any) {
-    const { className, style, onClick } = props;
+function SampleNextArrow(props: props) {
+    const { style, onClick } = props;
     return (
         <div
             className={'z-10 w-10 h-10  rounded-full flexImportant items-center justify-center absolute  top-6 right-11 translate-x-[50%] border-0 hover:border-2 border-[#E6E8EC] transition-all duration-150 ease-in-out'}
@@ -122,8 +128,8 @@ function SampleNextArrow(props: any) {
         </div>
     );
 }
-function SamplePrevArrow(props: any) {
-    const { className, style, onClick } = props;
+function SamplePrevArrow(props: props) {
+    const { style, onClick } = props;
     return (
         <div
             className={'z-10 w-10 h-10  rounded-full flexImportant items-center justify-center absolute  top-6 right-[88px] translate-x-[50%] border-0 hover:border-2 border-[#E6E8EC] transition-all duration-150 ease-in-out'}

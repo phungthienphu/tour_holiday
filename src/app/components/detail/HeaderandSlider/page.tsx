@@ -7,24 +7,20 @@ import goNext from '../../../../assets/icon/arrowNext.svg'
 import upLoad from '../../../../assets/icon/uploadIcon.svg'
 import star from '../../../../assets/icon/star.svg'
 import locationIcon from '../../../../assets/icon/locationArrow.svg'
-import back from '../../../../assets/icon/left_arrow.svg'
 import host from '../../../../assets/image/client.png'
 import image1 from '../../../../assets/image/detail/home_leak.png'
 import image2 from '../../../../assets/image/detail/bed.png'
 import Slider from 'react-slick'
-import imgSW1 from '../../../../assets/image/imgSw.png'
 import Link from 'next/link'
 
 
 export default function HeaderSlider() {
 
-    var settings = {
+    const settings = {
         infinite: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-
-
     };
 
     return (

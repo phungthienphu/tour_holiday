@@ -53,10 +53,10 @@ export default function DescReserve() {
                     <div className="desciption font-normal text-base leading-6 text-[#777E90]">
                         <p>
                             Described by Queenstown House  Garden magazine as having
-                            'one of the best views we've ever seen'
+                            &apos;one of the best views we&apos;ve ever seen&apos;
                             you will love relaxing in this newly
                             built, architectural house sitting proudly on Queenstown Hill.<br /><br />
-                            Enjoy breathtaking 180' views of Lake Wakatipu from your well
+                            Enjoy breathtaking 180&apos; views of Lake Wakatipu from your well
                             appointed  privately accessed bedroom with modern en suite and floor-to-ceiling
                             windows.<br /><br />Your private patio takes in the afternoon sun, letting you soak up
                             unparalleled lake and mountain views by day and the stars

@@ -2,7 +2,7 @@
 const nextConfig = {};
 export default {
     reactStrictMode: true,
-    nextConfig
+    swcMinify: true,
     // các cấu hình khác
   }
 // export default nextConfig;
