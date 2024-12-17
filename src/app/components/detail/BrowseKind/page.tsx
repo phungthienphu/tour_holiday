@@ -12,7 +12,7 @@ interface props {
 
 }
 export default function BrowseKind() {
-    let settings = {
+    const settings = {
         infinite: false,
         speed: 500,
         slidesToShow: 4,

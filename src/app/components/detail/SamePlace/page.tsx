@@ -14,7 +14,7 @@ interface props {
 }
 
 export default function SamePlace() {
-    let settings = {
+    const settings = {
         infinite: false,
         speed: 500,
         slidesToShow: 4,

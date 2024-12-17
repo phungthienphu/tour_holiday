@@ -14,7 +14,7 @@ interface props {
 
 }
 export default function Adventure() {
-    let settings = {
+    const settings = {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
