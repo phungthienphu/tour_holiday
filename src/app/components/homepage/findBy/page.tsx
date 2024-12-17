@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Slider from 'react-slick';
 import arrowL from '../../../../assets/icon/left_arrow.svg'
 import arrowR from '../../../../assets/icon/right_arrow.svg'
-import home from '../../../../assets/icon/home.svg'
 import house from '../../../../assets/image/house.png'
 import avt2 from '../../../../assets/image/avt2.png'
 import star from '../../../../assets/icon/star.svg'
@@ -16,7 +15,7 @@ interface props {
 
 }
 export default function FindBy() {
-    let settings = {
+    const settings = {
         infinite: false,
         speed: 500,
         slidesToShow: 4,

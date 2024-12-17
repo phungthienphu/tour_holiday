@@ -13,7 +13,7 @@ interface props {
 }
 export default function SomeWhere() {
 
-    let settings = {
+    const settings = {
         infinite: false,
         speed: 500,
         slidesToShow: 3,

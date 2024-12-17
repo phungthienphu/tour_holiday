@@ -14,7 +14,7 @@ interface props {
 
 }
 export default function Adventure() {
-    let settings = {
+    const settings = {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -49,7 +49,7 @@ export default function Adventure() {
     return (
         <div className="lg:pb-[136px] md:pb-[136px] pb-[100px] lg:pt-[56px] md:pt-[56px] pt-[32px]">
             <div className="title_adventure flex flex-col gap-3 justify-center items-center text-center mb-12">
-                <h1 className="text-5xl font-bold max-sm:text-[40px] max-sm:leading-[48px] tracking-[-2%]">Let's go on an adventure</h1>
+                <h1 className="text-5xl font-bold max-sm:text-[40px] max-sm:leading-[48px] tracking-[-2%]">Let&apos;s go on an adventure</h1>
                 <p className="text-2xl max-sm:text-base  font-normal text-[#777E90] tracking-[-1%]">Find and book a great experience</p>
             </div>
             <div className="lg:w-[1120px] md:w-[864px] mx-auto adven">
